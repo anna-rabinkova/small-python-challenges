@@ -16,3 +16,12 @@ def reversed_list(lst1, lst2):
     return True
   else:
     return False
+    
+    
+ MY CODE OPTION#2:
+ 
+ def reversed_list(lst1,lst2):
+  for number in range(len(lst1)):
+    if lst1[number] != lst2[-1-number]:
+      return False
+  return True
